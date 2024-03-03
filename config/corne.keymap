@@ -14,30 +14,36 @@
 
         colon_combo {
             bindings = <&kp COLON>;
-            key-positions = <33 41>;
-            timeout-ms = <500>;
+            key-positions = <33 12>;
+            timeout-ms = <1000>;
             layers = <0>;
         };
 
         semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <32 41>;
-            timeout-ms = <500>;
+            key-positions = <32 12>;
+            timeout-ms = <1000>;
             layers = <0>;
         };
 
         mul {
             bindings = <&kp ASTERISK>;
-            key-positions = <41 23>;
-            timeout-ms = <500>;
+            key-positions = <23 12>;
+            timeout-ms = <1000>;
             layers = <0>;
         };
 
-        hash {
+        aps {
             bindings = <&kp APOS>;
-            key-positions = <22 41>;
-            timeout-ms = <500>;
+            key-positions = <22 12>;
+            timeout-ms = <1000>;
             layers = <0>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <23 41>;
+            timeout-ms = <1000>;
         };
     };
 
@@ -82,9 +88,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp DQT   &kp HASH   &kp DLLR  &kp PRCNT    &kp AMPS   &kp CARET  &kp KP_MULTIPLY  &kp LPAR        &kp RPAR  &kp BSPC
-&kp LSHFT  &kp EQUAL  &kp PLUS  &kp MINUS  &kp AT    &trans       &trans     &trans     &kp BSLH         &kp LBKT        &kp RBKT  &kp TILDE
-&kp LCTRL  &kp LT     &kp GT    &trans     &trans    &trans       &kp UNDER  &trans     &kp PIPE         &kp LEFT_BRACE  &kp RBRC  &kp GRAVE
+&kp TAB    &kp EXCL   &kp DQT   &kp HASH   &kp DLLR  &kp PRCNT    &kp AMPS   &kp CARET  &kp ASTERISK  &kp LPAR        &kp RPAR  &kp BSPC
+&kp LSHFT  &kp EQUAL  &kp PLUS  &kp MINUS  &kp AT    &trans       &trans     &trans     &kp BSLH      &kp LBKT        &kp RBKT  &kp TILDE
+&kp LCTRL  &kp LT     &kp GT    &trans     &trans    &trans       &kp UNDER  &trans     &kp PIPE      &kp LEFT_BRACE  &kp RBRC  &kp GRAVE
                                 &kp LGUI   &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
