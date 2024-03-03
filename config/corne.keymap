@@ -32,6 +32,13 @@
             timeout-ms = <500>;
             layers = <0>;
         };
+
+        hash {
+            bindings = <&kp APOS>;
+            key-positions = <22 41>;
+            timeout-ms = <500>;
+            layers = <0>;
+        };
     };
 
     keymap {
