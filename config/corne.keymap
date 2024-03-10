@@ -14,28 +14,28 @@
 
         colon_combo {
             bindings = <&kp COLON>;
-            key-positions = <33 12>;
+            key-positions = <33 24>;
             timeout-ms = <1000>;
             layers = <0>;
         };
 
         semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <32 12>;
+            key-positions = <32 24>;
             timeout-ms = <1000>;
             layers = <0>;
         };
 
         mul {
             bindings = <&kp ASTERISK>;
-            key-positions = <23 12>;
+            key-positions = <23 24>;
             timeout-ms = <1000>;
             layers = <0>;
         };
 
         aps {
             bindings = <&kp APOS>;
-            key-positions = <22 12>;
+            key-positions = <22 24>;
             timeout-ms = <1000>;
             layers = <0>;
         };
