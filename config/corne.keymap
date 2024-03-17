@@ -45,6 +45,11 @@
             key-positions = <23 41>;
             timeout-ms = <1000>;
         };
+
+        toggleLayer3 {
+            bindings = <&tog 3>;
+            key-positions = <23 35>;
+        };
     };
 
     keymap {
@@ -97,10 +102,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F3  &kp N7        &kp N8  &kp N9  &none         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp H   &kp N4        &kp N5  &kp N6  &none         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp NUMBER_1  &kp N2  &kp N3  &kp PERIOD    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
