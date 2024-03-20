@@ -93,8 +93,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL     &kp DQT        &kp HASH     &bt BT_SEL 2  &bt BT_SEL 1      &trans   &kp SLASH  &kp EQUAL  &kp QUESTION  &trans  &kp BSPC
-&trans   &kp AT_SIGN  &kp AMPERSAND  &kp DOLLAR   &trans        &bt BT_SEL 0      &trans   &trans     &trans     &trans        &trans  &kp TILDE
+&kp TAB  &kp EXCL     &kp DQT        &kp DOLLAR   &bt BT_SEL 2  &bt BT_SEL 1      &trans   &kp SLASH  &kp EQUAL  &kp QUESTION  &trans  &kp BSPC
+&trans   &kp AT_SIGN  &kp AMPERSAND  &kp PIPE     &trans        &bt BT_SEL 0      &trans   &trans     &trans     &trans        &trans  &kp TILDE
 &trans   &kp LT       &kp GT         &kp PERCENT  &trans        &bt BT_CLR_ALL    &trans   &trans     &trans     &trans        &trans  &kp GRAVE
                                      &kp LGUI     &trans        &kp SPACE         &kp RET  &trans     &kp RALT
             >;
