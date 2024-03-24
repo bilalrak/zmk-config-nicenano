@@ -48,7 +48,24 @@
 
         toggleLayer3 {
             bindings = <&tog 3>;
-            key-positions = <23 35>;
+            key-positions = <13 25>;
+            timeout-ms = <0>;
+        };
+    };
+
+    macros {
+        solidedge_ctrlH: solidedge_ctrlH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp H>;
+            label = "SOLIDEDGE_CTRLH";
+        };
+
+        solidedge_ctrlS: solidedge_ctrlS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp S>;
+            label = "SOLIDEDGE_CTRLS";
         };
     };
 
