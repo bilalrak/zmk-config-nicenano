@@ -54,14 +54,14 @@
     };
 
     macros {
-        solidedge_ctrlH: solidedge_ctrlH {
+        SE_ctrlH: solidedge_ctrlH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RCTRL &kp H>;
             label = "SOLIDEDGE_CTRLH";
         };
 
-        solidedge_ctrlS: solidedge_ctrlS {
+        SE_ctrlS: solidedge_ctrlS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RCTRL &kp S>;
@@ -119,10 +119,10 @@
 
         solidedge_layer {
             bindings = <
-&kp ESCAPE  &kp F3  &kp N7        &kp N8  &kp N9      &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp H   &kp N4        &kp N5  &kp N6      &none            &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &none   &kp NUMBER_1  &kp N2  &kp N3      &kp DELETE       &trans  &trans  &trans  &trans  &trans  &trans
-                                  &kp N0  &kp PERIOD  &kp ENTER        &trans  &trans  &trans
+&kp ESCAPE      &kp F3     &kp N7        &kp N8  &kp N9      &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans  &trans
+&none           &SE_ctrlH  &kp N4        &kp N5  &kp N6      &none            &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &SE_ctrlS  &kp NUMBER_1  &kp N2  &kp N3      &kp DELETE       &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp N0  &kp PERIOD  &kp ENTER        &trans  &trans  &trans
             >;
         };
     };
