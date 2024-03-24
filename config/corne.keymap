@@ -49,7 +49,7 @@
         toggleLayer3 {
             bindings = <&tog 3>;
             key-positions = <13 25>;
-            timeout-ms = <0>;
+            timeout-ms = <100>;
         };
     };
 
