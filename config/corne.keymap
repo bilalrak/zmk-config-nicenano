@@ -15,19 +15,19 @@
         mul {
             bindings = <&kp ASTERISK>;
             key-positions = <23 12>;
-            timeout-ms = <1000>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
         aps {
             bindings = <&kp APOS>;
             key-positions = <22 12>;
-            timeout-ms = <1000>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
-        toggleLayer3 {
-            bindings = <&tog 3>;
+        toggleLayer_SE {
+            bindings = <&tog 4>;
             key-positions = <13 25>;
             timeout-ms = <100>;
         };
@@ -35,8 +35,14 @@
         se_redo {
             bindings = <&kp LC(Y)>;
             key-positions = <24 12>;
-            timeout-ms = <1000>;
-            layers = <3>;
+            timeout-ms = <100>;
+            layers = <4>;
+        };
+
+        toggle_layer_wow {
+            bindings = <&tog 3>;
+            key-positions = <0 11>;
+            timeout-ms = <100>;
         };
     };
 
@@ -85,6 +91,15 @@
 &trans   &kp AT_SIGN  &kp AMPERSAND  &kp PIPE     &trans        &bt BT_SEL 0      &trans                &trans     &trans     &trans        &trans  &kp TILDE
 &trans   &kp LT       &kp GT         &kp PERCENT  &trans        &bt BT_CLR_ALL    &trans                &trans     &trans     &trans        &trans  &kp GRAVE
                                      &kp LGUI     &trans        &kp SPACE         &kp RET               &trans     &kp RALT
+            >;
+        };
+
+        world_of_warships {
+            bindings = <
+&trans  &kp N      &kp Y     &kp UP    &kp R      &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp U     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp N1    &kp N2    &kp N4     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans    &trans     &kp X     &trans  &trans  &trans
             >;
         };
 
