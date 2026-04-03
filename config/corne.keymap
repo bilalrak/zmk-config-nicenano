@@ -103,12 +103,21 @@
             >;
         };
 
-        solidedge_layer {
+        fusion360 {
             bindings = <
-&kp ESCAPE      &kp BACKSPACE  &kp F3     &kp N7        &kp N8        &kp N9          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LC(H)      &kp LC(S)  &kp NUMBER_4  &kp N5        &kp NUMBER_6    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)       &kp DEL        &kp LC(I)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &kp N0        &kp PERIOD    &kp ENTER       &trans  &trans  &trans
+&kp ESCAPE      &kp BACKSPACE  &kp F3     &trans  &trans  &trans    &trans     &trans      &trans  &kp N7        &kp N8        &kp N9
+&kp LEFT_SHIFT  &kp LC(H)      &kp LC(S)  &trans  &trans  &trans    &trans     &trans      &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&kp LC(Z)       &kp DEL        &kp LC(I)  &trans  &trans  &trans    &trans     &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+                                          &trans  &trans  &trans    &kp ENTER  &kp PERIOD  &kp N0
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans      &kp NUMBER_7  &kp N8        &kp N9        &kp L        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp E        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp N0        &trans        &kp ENTER    &trans  &trans  &trans
             >;
         };
     };
